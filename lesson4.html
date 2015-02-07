@@ -12,6 +12,7 @@
 		top: 40px;
 		font-size: 25px;
 		float: top 25px;
+		z-index: 3;
 	}
 	a:hover, a:focus, a:active { 
 	text-decoration: underline; 
@@ -23,9 +24,10 @@
 		position: absolute;
 		top:100px;
 		left: 50px;	}
-	body {
-		background-image: url( "https://c1.staticflickr.com/5/4114/4955848379_3f6991b5a1.jpg")
 
+	body {
+		z-index: -50;
+		background-image: url( "https://c1.staticflickr.com/5/4114/4955848379_3f6991b5a1.jpg");
 
 	}
 	p {
@@ -66,6 +68,18 @@
 		bottom: 150px;
 
 	}
+	.gallery {
+		position:absolute;
+		right: 20px;
+		top:100px;
+		padding:10px;
+
+	}
+	.photos {
+		padding:10px;
+		width: 200px;
+		height: 200px;
+	}
 	</style>
 	<title></title>
 
@@ -74,12 +88,19 @@
 	<nav>
 <ul>
 <li><a href="">Sign In</li></a>
-<li><a href="lesson4-3.html">Places</li></a>
-<li><a href="lesson4-2.html">Reservations</li></a>
-<li><a href="lesson4.html">Home</li></a>
+<li><a href="lesson4-3.html" target = "blank">Places</li></a>
+<li><a href="file:///Users/MarcosDeLima/Desktop/git-lesson4/lesson4-2.html"target="blank">Reservations</li></a>
+<li><a href="lesson4.html" target = "blank">Home</li></a>
 
 </ul>
 </nav>
+<div class="gallery">
+ 
+  <img class="photos" src="http://auto.img.v4.skyrock.net/7655/68207655/pics/2727893966_1.jpg">
+ <img class="photos"src="http://gfol1.leparadisdesanges-voyance.com/-paradis-ciel-amour-ange-terre_ws1017063973.jpg">
+ <img class="photos" src="http://auto.img.v4.skyrock.net/4446/8904446/pics/168212877_small.jpg">
+
+</div>
 <div class="fb">
 <!-- Facebook -->
 <a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
